@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gotransit"
+version = "0.1.0"
+description = "Python wrapper for Go Transit API"
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = [
+    "requests",
+    "python-dotenv"
+]
+authors = [
+    { name = "Kenrick Zhang", email = "kenrickzhang16@gmail.com" }
+]
+license = { file = "LICENSE" }
+keywords = ["gotransit", "metrolinx", "transit", "api", "python"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
